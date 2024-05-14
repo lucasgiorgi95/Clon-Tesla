@@ -1,0 +1,21 @@
+---
+const {color, title, subtitle,paragraph} = Astro.props
+const textColor = `text-${color}`
+---
+
+<section class="h-screen w-screen text-center relative overflow-hidden">
+    <div class="z-30 relative h-full flex flex-col">
+        <header class="">
+            <h2 class={`${textColor} pt-32 text-[40px] font-medium`}>{title}</h2>
+            <p class={`${textColor} text-[25px] font-medium`}>{subtitle}</p>
+            <p class={`${textColor} text-sm`}>{paragraph}</p>
+        </header>
+
+        <footer class="flex flex-grow flex-nowrap justify-end flex-col pb-32 ">
+            <slot name="footer"/>
+        </footer>
+    </div>
+    <div class="absolute top-0 bottom-0 h-full w-full z-10 ">
+        <slot name="background"/>
+    </div>
+</section>

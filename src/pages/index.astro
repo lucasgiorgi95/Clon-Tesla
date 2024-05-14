@@ -1,0 +1,43 @@
+---
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Tesla landing">
+  <Header />
+  <main class="relative w-full h-screen overflow-auto">
+    <!-- <main class="snap-y snap-mandatory relative w-full h-screen overflow-auto"> -->
+    <!-- <div class="snap-center">
+		
+	</div>
+	<div class="snap-center">
+		<Hero/>
+	</div>
+	<div class="snap-center">
+		<Hero/>
+	</div>
+	<div class="snap-center">
+		<Hero/>
+	</div> -->
+    <Hero
+      title="Model 3"
+      subtitle="Desde $676,500"
+      paragraph="Despues de los ahorros estimados en gasolina"
+      color="black"
+    >
+      <div slot="footer">
+        <a class="text-black bg-[#ffffffbf] backdrop-blur-[8px] rounded font-medium text-sm px-12 py-3 inline-block " href="">
+          Ordenar
+        </a>
+        <a class="text-white bg-[#171a2093] backdrop-blur-md rounded font-medium text-sm px-12 py-3 inline-block ml-6" href="">
+          Prueba de manejo
+        </a>
+      </div>
+      <img
+        slot="background"
+        class="object-center object-cover h-full w-full"
+        src="model-3.avif" />
+    </Hero>
+  </main>
+</Layout>
