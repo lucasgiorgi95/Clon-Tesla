@@ -5,8 +5,8 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Tesla landing">
-  <Header />
   <main class="relative w-full h-screen overflow-auto">
+    <Header />
     <!-- <main class="snap-y snap-mandatory relative w-full h-screen overflow-auto"> -->
     <!-- <div class="snap-center">
 		
@@ -20,6 +20,8 @@ import Layout from "../layouts/Layout.astro";
 	<div class="snap-center">
 		<Hero/>
 	</div> -->
+
+  <!-- model-3 -->
     <Hero
       title="Model 3"
       subtitle="Desde $676,500"
@@ -27,10 +29,10 @@ import Layout from "../layouts/Layout.astro";
       color="black"
     >
       <div slot="footer">
-        <a class="text-black bg-[#ffffffbf] backdrop-blur-[8px] rounded font-medium text-sm px-12 py-3 inline-block " href="">
+        <a class="text-black bg-[#ffffffbf] w-auto backdrop-blur-[8px] rounded font-medium text-sm px-24 py-3 inline-block " href="">
           Ordenar
         </a>
-        <a class="text-white bg-[#171a2093] backdrop-blur-md rounded font-medium text-sm px-12 py-3 inline-block ml-6" href="">
+        <a class="text-white bg-[#171a2093] backdrop-blur-md rounded font-medium text-sm px-14 py-3 inline-block ml-6" href="">
           Prueba de manejo
         </a>
       </div>
@@ -39,5 +41,120 @@ import Layout from "../layouts/Layout.astro";
         class="object-center object-cover h-full w-full"
         src="model-3.avif" />
     </Hero>
+    <!-- model-y -->
+    <Hero
+      title="Model Y"
+      subtitle="Desde $679,000"
+      paragraph="Despues de los ahorros estimados en gasolina"
+      color="black"
+    >
+      <div slot="footer">
+        <a class="text-black bg-[#ffffffbf] w-auto backdrop-blur-[8px] rounded font-medium text-sm px-24 py-3 inline-block " href="">
+          Ordenar
+        </a>
+        <a class="text-white bg-[#171a2093] backdrop-blur-md rounded font-medium text-sm px-14 py-3 inline-block ml-6" href="">
+          Prueba de manejo
+        </a>
+      </div>
+      <img
+        slot="background"
+        class="object-center object-cover h-full w-full"
+        src="model-y.avif" />
+    </Hero>
+     <!-- model-x -->
+     <Hero
+     title="Model X"
+     subtitle="Desde $1,416,900"
+     paragraph="Despues de los ahorros estimados en gasolina"
+     color="black"
+   >
+     <div slot="footer">
+       <a class="text-black bg-[#ffffffbf] w-auto backdrop-blur-[8px] rounded font-medium text-sm px-24 py-3 inline-block " href="">
+         Ordenar
+       </a>
+       <a class="text-white bg-[#171a2093] backdrop-blur-md rounded font-medium text-sm px-14 py-3 inline-block ml-6" href="">
+         Prueba de manejo
+       </a>
+     </div>
+     <img
+       slot="background"
+       class="object-center object-cover h-full w-full"
+       src="model-x.avif" />
+   </Hero>
+        <!-- model-s -->
+        <Hero
+        title="Model S"
+        subtitle="Desde $1,321,400"
+        paragraph="Despues de los ahorros estimados en gasolina"
+        color="black"
+      >
+        <div slot="footer">
+          <a class="text-black bg-[#ffffffbf] w-auto backdrop-blur-[8px] rounded font-medium text-sm px-24 py-3 inline-block " href="">
+            Ordenar
+          </a>
+          <a class="text-white bg-[#171a2093] backdrop-blur-md rounded font-medium text-sm px-14 py-3 inline-block ml-6" href="">
+            Prueba de manejo
+          </a>
+        </div>
+        <img
+          slot="background"
+          class="object-center object-cover h-full w-full"
+          src="model-s.avif" />
+      </Hero>
+        <!-- video -->
+        <Hero
+        title="Vive la experiencia Tesla"
+        subtitle=""
+        paragraph2="Agenda una prueba de manejo hoy"
+        color="white"
+      >
+        <div slot="footer">
+          <a class="text-white bg-transparent  border-[3px] border-white w-auto backdrop-blur-[8px] rounded font-medium text-sm px-24 py-3 inline-block " href="">
+            Prueba de manejo
+          </a>
+        </div>
+        <video
+          slot="background"
+          class="object-center object-cover h-full w-full"
+          autoplay
+          loop
+          muted
+          src="drive-desktop.webm" />
+      </Hero>
+        <!-- powerwall -->
+        <Hero
+        title="Energía solar y Powerwall"
+        subtitle=""
+        paragraph2="Totalmente eléctrico"
+        color="black"
+      >
+        <div slot="footer">
+         
+          <a class="text-white bg-[#171a20d1] backdrop-blur-md rounded font-medium text-sm px-20 py-3 inline-block ml-6" href="">
+            Más Información
+          </a>
+        </div>
+        <img
+          slot="background"
+          class="object-center object-cover h-full w-full"
+          src="powerwall.avif" />
+      </Hero>
+           <!-- accesorios -->
+           <Hero
+           title="Accesorios"
+           subtitle=""
+           paragraph=""
+           color="black"
+         >
+           <div slot="footer">
+            <a class="text-gray-800 bg-[#ffffffec]  border-[3px] border-white w-auto backdrop-blur-[8px] rounded font-medium text-sm px-24 py-3 inline-block " href="">
+              Compra Ahora
+            </a>
+           </div>
+           <img
+             slot="background"
+             class="object-center object-cover h-full w-full"
+             src="accessories.avif" />
+         </Hero>
   </main>
 </Layout>
